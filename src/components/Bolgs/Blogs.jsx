@@ -13,7 +13,7 @@ const Blogs = () => {
     console.log(blogs)
     return (
         <div>
-            
+            {blogs.length}
         </div>
     );
 };
