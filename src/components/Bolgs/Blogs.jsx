@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
 
-const Blogs = () => {
+const Blogs = ({handleBookMarked}) => {
 
     const [blogs,setBlogs]= useState([]);
 
@@ -11,7 +11,7 @@ const Blogs = () => {
         .then(data=>setBlogs(data))
     })
 
-    console.log(blogs)
+    // console.log(blogs)
     return (
         <div>
             {blogs.length}
@@ -21,6 +21,7 @@ const Blogs = () => {
                     return(
                         <Blog
                         blog={blog}
+                        handleBookMarked={handleBookMarked}
                         >
                         </Blog>
                     )
