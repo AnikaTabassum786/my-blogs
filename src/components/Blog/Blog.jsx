@@ -13,7 +13,7 @@ const Blog = ({blog,handleBookMarked,handleAsReadingTime}) => {
   </figure>
   <div className="card-body">
 
-    <div className='author flex justify-around items-center'>
+    <div className='author flex gap-10 items-center'>
         <h3>{blog.author}</h3>
         <img className='w-16' src={blog.author_img} alt="" />
         <button onClick={()=>handleBookMarked(blog)}><FaBookmark  size={25}/></button>

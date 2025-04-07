@@ -39,7 +39,7 @@ function App() {
       ></Blogs>
       </div>
 
-      <div className='right-container w-[30%]'>
+      <div className='right-container w-[30%] '>
          <h1>Reading Time: {readingCount}</h1>
          <h1>BookMarked count: {bookMark.length}</h1>
          {
